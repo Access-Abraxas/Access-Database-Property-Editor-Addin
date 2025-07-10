@@ -1,12 +1,12 @@
-#The Microsoft Access Database Property Editor Add-In
+# The Microsoft Access Database Property Editor Add-In
 This 100% Free Microsoft Access Add-In tool was designed to help view and edit MS Access database level properties for any database you have open in MS Access.  The database level properties are the DAO properties found in the `Application.CurrentDB.Properties` collection.  These properties are generally the database level settings used within the Microsoft Access client for your specific Access database application.  Changing these properties manually CAN BE DANGEROUS and difficult to do, and this tool is an attempt to make it safer to edit these properties, as well as make it super simple to quickly view all the database properties for any given Access database application.
 
 
-##Where to download:
+## Where to download:
 The latest release of the of the Access Add-In file (ACCDA) can be downloaded from here: \[Latest ACCDA Release](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/releases)
 
 
-##How to Install:
+## How to Install:
 To just install the latest version of this Access Add-In without messing with any of the course code, complete the following steps:
 
 1. Download the latest ACCDA file.
@@ -18,7 +18,7 @@ To just install the latest version of this Access Add-In without messing with an
 You will be taken back to the "Add-In Manager" form and the Add-In should now show as installed.
 
 
-##How to Use this Tool:
+## How to Use this Tool:
 
 To use this tool once it has been installed:
 
@@ -27,8 +27,8 @@ To use this tool once it has been installed:
 3. Click on the "View Database Properties" button on the Start form.  A form should a list of all the database level properties for the current database will open.
 
 
-##Contributors:
-The following is a list of the Contributors to this project:
+## Project Contributors:
+The following is a list of the contributors to this project:
 
 1. George Hepworth
 2. Crystal Long
