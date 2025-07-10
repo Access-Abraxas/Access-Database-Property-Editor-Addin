@@ -1,0 +1,9 @@
+
+
+#######################################
+        2025-07-09 -- GGriffith 
+#######################################
+
+Initial Commit of the MS Access Database Properties Editor Add-In.
+
+

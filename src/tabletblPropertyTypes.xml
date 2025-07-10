@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:od="urn:schemas-microsoft-com:officedata">
+<xsd:schema>
+<xsd:element name="dataroot">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element ref="tblPropertyTypes" minOccurs="0" maxOccurs="unbounded"/>
+</xsd:sequence>
+<xsd:attribute name="generated" type="xsd:dateTime"/>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="tblPropertyTypes">
+<xsd:annotation>
+<xsd:appinfo>
+<od:index index-name="fTypeID" index-key="fID " primary="no" unique="no" clustered="no" order="asc"/>
+<od:index index-name="PrimaryKey" index-key="fID " primary="yes" unique="yes" clustered="no" order="asc"/>
+<od:tableProperty name="GUID" type="9" value="RMFR69WRtkKy+5jggTWbug==
+"/>
+<od:tableProperty name="Orientation" type="2" value="0"/>
+<od:tableProperty name="OrderByOn" type="1" value="0"/>
+<od:tableProperty name="NameMap" type="11" value="CswOVQAAAABEwVHr1ZG2QrL7mOCBNZu6AAAAAKcWmpLcYeZAAAAAAAAAAAB0AGIA
+bABQAHIAbwBwAGUAcgB0AHkAVAB5AHAAZQBzAAAAAAAAANrzG4dgB2ZNp6eYnFf4
+SSQHAAAARMFR69WRtkKy+5jggTWbumYASQBEAAAAAAAAAAgOPmNF5gpAqyEH1+D9
+TXYHAAAARMFR69WRtkKy+5jggTWbumYAVAB5AHAAZQBOAGEAbQBlAAAAAAAAACAZ
+F7PdvFBDimPJyR9/JAIHAAAARMFR69WRtkKy+5jggTWbumYAVAB5AHAAZQBWAGIA
+YQBOAGEAbQBlAAAAAAAAAD4l7oZUWhhAnWuI9Gq2aB4HAAAARMFR69WRtkKy+5jg
+gTWbumYAVAB5AHAAZQBWAGEAbAB1AGUAAAAAAAAAajeu0Ez/+UmJpETcu8K4+gcA
+AABEwVHr1ZG2QrL7mOCBNZu6ZgBUAHkAcABlAEQAZQBzAGMAcgBpAHAAdABpAG8A
+bgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAUAAAAAAAAAAAAAAAAAAAAAAA==
+"/>
+<od:tableProperty name="DefaultView" type="2" value="2"/>
+<od:tableProperty name="DisplayViewsOnSharePointSite" type="2" value="1"/>
+<od:tableProperty name="TotalsRow" type="1" value="0"/>
+<od:tableProperty name="FilterOnLoad" type="1" value="0"/>
+<od:tableProperty name="OrderByOnLoad" type="1" value="1"/>
+<od:tableProperty name="HideNewField" type="1" value="0"/>
+<od:tableProperty name="BackTint" type="6" value="100"/>
+<od:tableProperty name="BackShade" type="6" value="100"/>
+<od:tableProperty name="ThemeFontIndex" type="4" value="1"/>
+<od:tableProperty name="AlternateBackThemeColorIndex" type="4" value="1"/>
+<od:tableProperty name="AlternateBackTint" type="6" value="100"/>
+<od:tableProperty name="AlternateBackShade" type="6" value="95"/>
+<od:tableProperty name="ReadOnlyWhenDisconnected" type="1" value="0"/>
+<od:tableProperty name="DatasheetGridlinesThemeColorIndex" type="4" value="3"/>
+<od:tableProperty name="DatasheetForeThemeColorIndex" type="4" value="0"/>
+<od:tableProperty name="PublishToWeb" type="2" value="1"/>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="fID" minOccurs="1" od:jetType="autonumber" od:sqlSType="int" od:autoUnique="yes" od:nonNullable="yes" type="xsd:int">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="GUID" type="9" value="2vMbh2AHZk2np5icV/hJJA==
+"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="-1"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="1"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="fTypeName" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="GUID" type="9" value="CA4+Y0XmCkCrIQfX4P1Ndg==
+"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="1500"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="2"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
+<od:fieldProperty name="DisplayControl" type="3" value="109"/>
+<od:fieldProperty name="IMEMode" type="2" value="0"/>
+<od:fieldProperty name="IMESentenceMode" type="2" value="3"/>
+<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:element>
+<xsd:element name="fTypeVbaName" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="GUID" type="9" value="IBkXs928UEOKY8nJH38kAg==
+"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="1860"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="3"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
+<od:fieldProperty name="DisplayControl" type="3" value="109"/>
+<od:fieldProperty name="IMEMode" type="2" value="0"/>
+<od:fieldProperty name="IMESentenceMode" type="2" value="3"/>
+<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="20"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:element>
+<xsd:element name="fTypeValue" minOccurs="0" od:jetType="longinteger" od:sqlSType="int" type="xsd:int">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="GUID" type="9" value="PiXuhlRaGECda4j0arZoHg==
+"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="1485"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="4"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="DecimalPlaces" type="2" value="255"/>
+<od:fieldProperty name="DefaultValue" type="12" value="0"/>
+<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="DisplayControl" type="3" value="109"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="fTypeDescription" minOccurs="0" od:jetType="text" od:sqlSType="nvarchar">
+<xsd:annotation>
+<xsd:appinfo>
+<od:fieldProperty name="GUID" type="9" value="ajeu0Ez/+UmJpETcu8K4+g==
+"/>
+<od:fieldProperty name="ColumnWidth" type="3" value="5295"/>
+<od:fieldProperty name="ColumnOrder" type="3" value="5"/>
+<od:fieldProperty name="ColumnHidden" type="1" value="0"/>
+<od:fieldProperty name="Required" type="1" value="0"/>
+<od:fieldProperty name="AllowZeroLength" type="1" value="1"/>
+<od:fieldProperty name="DisplayControl" type="3" value="109"/>
+<od:fieldProperty name="IMEMode" type="2" value="0"/>
+<od:fieldProperty name="IMESentenceMode" type="2" value="3"/>
+<od:fieldProperty name="UnicodeCompression" type="1" value="1"/>
+<od:fieldProperty name="TextAlign" type="2" value="0"/>
+<od:fieldProperty name="AggregateType" type="4" value="-1"/>
+<od:fieldProperty name="ResultType" type="2" value="0"/>
+<od:fieldProperty name="CurrencyLCID" type="4" value="0"/>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:simpleType>
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="255"/>
+</xsd:restriction>
+</xsd:simpleType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+<dataroot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" generated="2025-07-09T21:10:07">
+<tblPropertyTypes>
+<fID>1</fID>
+<fTypeName>Big Integer</fTypeName>
+<fTypeVbaName>dbBigInt</fTypeVbaName>
+<fTypeValue>16</fTypeValue>
+<fTypeDescription>Represents a 64-bit signed integer in Access, with a range from –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. It&apos;s used for large numbers, especially when linking to SQL Server BigInt fields.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>2</fID>
+<fTypeName>Binary</fTypeName>
+<fTypeVbaName>dbBinary</fTypeVbaName>
+<fTypeValue>9</fTypeValue>
+<fTypeDescription>Represents binary data up to 510 bytes. It’s ideal for storing short, non-text binary values like encryption keys or hashes. Unlike dbLongBinary, it can be sorted and indexed, making it useful for performance-critical binary fields.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>3</fID>
+<fTypeName>Boolean</fTypeName>
+<fTypeVbaName>dbBoolean</fTypeVbaName>
+<fTypeValue>1</fTypeValue>
+<fTypeDescription>Represents a True/False (Yes/No) value. It stores data as –1 for True and 0 for False, and is commonly used for checkboxes or logical flags in Access tables.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>4</fID>
+<fTypeName>Byte</fTypeName>
+<fTypeVbaName>dbByte</fTypeVbaName>
+<fTypeValue>2</fTypeValue>
+<fTypeDescription>Represents an 8-bit unsigned integer with a range from 0 to 255. It’s ideal for storing small numeric values like flags, counters, or codes where space efficiency matters.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>5</fID>
+<fTypeName>Char</fTypeName>
+<fTypeVbaName>dbChar</fTypeVbaName>
+<fTypeValue>18</fTypeValue>
+<fTypeDescription>Represents fixed-length text data, typically used in linked tables from external sources like SQL Server.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>6</fID>
+<fTypeName>Currency</fTypeName>
+<fTypeVbaName>dbCurrency</fTypeVbaName>
+<fTypeValue>5</fTypeValue>
+<fTypeDescription>Represents a scaled 64-bit integer used for precise monetary values, with a range of –922,337,203,685,477.5808 to 922,337,203,685,477.5807. It avoids rounding errors common in floating-point types, making it ideal for financial data.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>7</fID>
+<fTypeName>Date/Time</fTypeName>
+<fTypeVbaName>dbDate</fTypeVbaName>
+<fTypeValue>8</fTypeValue>
+<fTypeDescription>Represents date and time values with high precision. It uses a 64-bit floating-point number, where the integer part represents the date and the fractional part represents the time. The valid range is from January 1, 100 to December 31, 9999.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>8</fID>
+<fTypeName>Decimal</fTypeName>
+<fTypeVbaName>dbDecimal</fTypeVbaName>
+<fTypeValue>20</fTypeValue>
+<fTypeDescription>Represents a fixed-precision, exact numeric value. It supports up to 28–29 significant digits, with precision and scale defined at creation. It’s primarily used in ODBCDirect workspaces, which are now deprecated in Access.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>9</fID>
+<fTypeName>Double</fTypeName>
+<fTypeVbaName>dbDouble</fTypeVbaName>
+<fTypeValue>7</fTypeValue>
+<fTypeDescription>Represents a 64-bit floating-point number used for storing double-precision numeric values. It supports an approximate range of ±1.79769313486231E+308 with up to 15–17 significant digits, making it ideal for scientific or high-precision calculations.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>10</fID>
+<fTypeName>Float</fTypeName>
+<fTypeVbaName>dbFloat</fTypeVbaName>
+<fTypeValue>21</fTypeValue>
+<fTypeDescription>Represents a floating-point number used in ODBCDirect workspaces. It supports approximate numeric values with precision similar to dbDouble, but its exact range and behavior depend on the ODBC driver. It&apos;s rarely used in modern Access development.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>11</fID>
+<fTypeName>GUID</fTypeName>
+<fTypeVbaName>dbGUID</fTypeVbaName>
+<fTypeValue>15</fTypeValue>
+<fTypeDescription>Represents a Globally Unique Identifier, stored as a 16-byte binary value. Perfect for ensuring a unique identifier across distributed systems.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>12</fID>
+<fTypeName>Integer</fTypeName>
+<fTypeVbaName>dbInteger</fTypeVbaName>
+<fTypeValue>3</fTypeValue>
+<fTypeDescription>Represents a 16-bit signed integer with a range from –32,768 to 32,767. It’s useful for small whole numbers like status codes or short counters where memory efficiency is important.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>13</fID>
+<fTypeName>Long</fTypeName>
+<fTypeVbaName>dbLong</fTypeVbaName>
+<fTypeValue>4</fTypeValue>
+<fTypeDescription>Represents is a 32-bit signed integer with a range from –2,147,483,648 to 2,147,483,647. It’s commonly used for AutoNumber primary keys and other whole-number fields that require a larger range than dbInteger.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>15</fID>
+<fTypeName>Memo</fTypeName>
+<fTypeVbaName>dbMemo</fTypeVbaName>
+<fTypeValue>12</fTypeValue>
+<fTypeDescription>Represents a string of text data up to 65,535 characters. Ideal for notes, descriptions, or other large text blocks. Unlike dbText, it cannot be indexed (except with full-text search) and doesn’t support sorting or fixed length.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>16</fID>
+<fTypeName>Numeric</fTypeName>
+<fTypeVbaName>dbNumeric</fTypeVbaName>
+<fTypeValue>19</fTypeValue>
+<fTypeDescription>Represents an exact numeric value with user-defined precision and scale, similar to dbDecimal. It’s used in ODBCDirect workspaces and supports up to 28–29 significant digits.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>17</fID>
+<fTypeName>Single</fTypeName>
+<fTypeVbaName>dbSingle</fTypeVbaName>
+<fTypeValue>6</fTypeValue>
+<fTypeDescription>Represents a 32-bit floating-point number used for storing single-precision numeric values. It supports an approximate range of ±3.4 × 10³⁸ with about 7 significant digits.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>18</fID>
+<fTypeName>Text</fTypeName>
+<fTypeVbaName>dbText</fTypeVbaName>
+<fTypeValue>10</fTypeValue>
+<fTypeDescription>Represents variable-length text data, with a maximum length of 255 characters. It’s ideal for storing short strings like names, addresses, or codes, and supports indexing and sorting for efficient querying.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>19</fID>
+<fTypeName>Time</fTypeName>
+<fTypeVbaName>dbTime</fTypeVbaName>
+<fTypeValue>22</fTypeValue>
+<fTypeDescription>Represents time-only values (without a date component). Its exact range and precision depend on the ODBC driver, but typically it supports times from 00:00:00 to 23:59:59.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>20</fID>
+<fTypeName>Time Stamp</fTypeName>
+<fTypeVbaName>dbTimeStamp</fTypeVbaName>
+<fTypeValue>23</fTypeValue>
+<fTypeDescription>Represents date and time values with fractional seconds. It typically maps to SQL’s datetime or timestamp types and supports nanosecond precision depending on the ODBC driver.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>21</fID>
+<fTypeName>VarBinary</fTypeName>
+<fTypeVbaName>dbVarBinary</fTypeVbaName>
+<fTypeValue>17</fTypeValue>
+<fTypeDescription>Represents variable-length binary data, typically used in ODBCDirect workspaces. It can store up to 2 GB of binary content, depending on the database engine, and is ideal for storing files, images, or other non-text binary blobs.</fTypeDescription>
+</tblPropertyTypes>
+<tblPropertyTypes>
+<fID>22</fID>
+<fTypeName>None</fTypeName>
+<fTypeVbaName>(None)</fTypeVbaName>
+<fTypeValue>0</fTypeValue>
+<fTypeDescription>Represents a DAO Type that is missing.</fTypeDescription>
+</tblPropertyTypes>
+</dataroot>
+</root>

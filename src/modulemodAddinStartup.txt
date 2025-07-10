@@ -1,0 +1,15 @@
+Option Compare Database
+Option Explicit
+
+Public Function AddinStart() As Boolean
+On Error GoTo HandleErrors
+
+    DoCmd.OpenForm "frmStart"
+
+ExitMethod:
+    AddinStart = True
+    Exit Function
+HandleErrors:
+    MsgBox Err.Description, vbCritical, "Error " & Nz(Err.Number, "")
+    Resume ExitMethod
+End Function

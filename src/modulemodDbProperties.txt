@@ -1,0 +1,240 @@
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+'
+' Module Name:  modDbProperties
+' Author:       Geoffrey Griffith
+' Company:      Imagine Thought Software
+' License:
+'
+'     Copyright © 2025 - Geoffrey L. Griffith
+'
+'     Permission is hereby granted, free of charge, to any person obtaining a copy
+'     of this software and associated documentation files (the “Software”), to deal
+'     in the Software without restriction, including without limitation the rights
+'     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+'     copies of the Software, and to permit persons to whom the Software is
+'     furnished to do so, subject to the following conditions:
+'
+'     The above copyright notice and this permission notice shall be included in
+'     all copies or substantial portions of the Software.
+'
+'     THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+'     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+'     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+'     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+'     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+'     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+'     SOFTWARE.
+'
+'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Option Compare Database
+Option Explicit
+
+Private Const g_sPropertiesTableName = "tblDbProperties"
+
+
+Public Function SetDatabaseProperty(PropName As String, PropType As Long, PropValue As Variant) As Boolean
+On Error GoTo HandleErrors
+
+    Dim db As DAO.Database
+    Dim prp As DAO.Property
+    Dim sName As String
+    Dim bAppend As Boolean
+    
+    SetDatabaseProperty = False
+    bAppend = True
+    
+    sName = Trim(Nz(PropName, ""))
+    If (Len(sName) > 0) Then
+        Set db = Application.CurrentDb
+        
+On Error GoTo PropError
+        db.Properties(PropName) = PropValue
+        GoTo Done
+        
+PropError:
+        If (Err.Number <> 3270) Then ' 3270 = Property doesn't exist in the Properties collection
+            GoTo HandleErrors
+        Else
+            Resume AddProp
+        End If
+
+AddProp:
+On Error GoTo HandleErrors
+
+        Select Case PropType
+        Case 1 ' dbBoolean
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CBool(PropValue))
+        Case 2 ' dbByte
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CByte(PropValue))
+        Case 3 ' dbInteger
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CInt(PropValue))
+        Case 4 ' dbLong
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CLng(PropValue))
+        Case 5 ' dbCurrency
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CCur(PropValue))
+        Case 6 ' dbSingle
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CSng(PropValue))
+        Case 7 ' dbDouble
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CDbl(PropValue))
+        Case 8 ' dbDate
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CDate(PropValue))
+        Case 9 ' dbBinary
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 10 ' dbText
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CStr(PropValue))
+        Case 12 ' dbMemo
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CStr(PropValue))
+        Case 15 ' dbGUID
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 16 ' dbBigInt
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 17 ' dbVarBinary
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 18 ' dbChar
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 19 ' dbNumeric
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 20 ' dbDecimal
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, CDec(PropValue))
+        Case 21 ' dbFloat
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 22 ' dbTime
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case 23 ' dbTimeStamp
+            Set prp = db.CreateProperty(Trim(Nz(PropName, "")), PropType, PropValue)
+        Case Else
+            MsgBox "Type Value: " & PropType & " is NOT a supported DAO Database Property type!", vbCritical, "Error"
+            bAppend = False
+        End Select
+    
+        If bAppend Then
+            db.Properties.Append prp
+        End If
+    End If
+    
+Done:
+    SetDatabaseProperty = True
+    
+ExitMethod:
+On Error Resume Next
+    Set db = Nothing
+    Exit Function
+HandleErrors:
+    MsgBox Err.Description, vbCritical, "Error " & Nz(Err.Number, "")
+    Resume ExitMethod
+End Function
+
+
+
+Public Sub DbPropertiesToTable()
+On Error GoTo HandleErrors
+
+    Dim prp As DAO.Property
+    Dim dbAddin As DAO.Database
+    Dim dbApp As DAO.Database
+    Dim rsTable As DAO.Recordset
+    
+    ' Disconnect the RecordSource for the list form from, if open
+    If Application.CodeProject.AllForms("frmDbPropertiesList").IsLoaded Then
+        Application.Forms!frmDbPropertiesList.RecordSource = ""
+    End If
+
+    ' Delete the old table, and create a fresh empty copy
+    Application.DoCmd.DeleteObject acTable, g_sPropertiesTableName
+    Application.DoCmd.CopyObject , g_sPropertiesTableName, acTable, g_sPropertiesTableName & "_Template"
+    
+    ' Setup all the database and recordset objects
+    Set dbApp = Application.CurrentDb
+    Set dbAddin = Application.CodeDb
+    Set rsTable = dbAddin.OpenRecordset(g_sPropertiesTableName)
+    
+    ' Insert all the DbProperties from the specified app instance
+On Error GoTo ValueNotSupported
+    For Each prp In dbApp.Properties
+        rsTable.AddNew
+        rsTable!fName = prp.Name
+        rsTable!fTypeID = prp.Type
+        If prp.Type = 1 Then
+            rsTable!fValue = IIf(prp.Value, "True", "False")
+        Else
+            rsTable!fValue = prp.Value
+        End If
+        GoTo NextProperty
+        
+ValueNotSupported:
+        If Err.Number <> 3251 Then
+            MsgBox Err.Description, vbCritical, "Error " & Nz(Err.Number, "")
+        Else
+            rsTable!fValue = "(Value Not Supported)"
+        End If
+        Resume Next
+        
+NextProperty:
+        rsTable.Update
+    Next
+    
+    ' Reassign the RecordSource back again
+    If Application.CodeProject.AllForms("frmDbPropertiesList").IsLoaded Then
+        Application.Forms!frmDbPropertiesList.RecordSource = "qryDbPropertiesListForm"
+    End If
+    DoEvents
+    
+ExitMethod:
+On Error Resume Next
+    If Not (rsTable Is Nothing) Then
+        rsTable.Close
+        Set rsTable = Nothing
+    End If
+    Set dbApp = Nothing
+    Set dbAddin = Nothing
+    Exit Sub
+HandleErrors:
+    MsgBox Err.Description, vbCritical, "Error " & Nz(Err.Number, "")
+    Resume ExitMethod
+End Sub
+
+
+
+Public Sub OpenAboutForm()
+On Error GoTo HandleErrors
+
+    DoCmd.OpenForm "frmAbout"
+    DoCmd.Close acForm, "frmStart"
+    
+ExitMethod:
+    Exit Sub
+HandleErrors:
+    MsgBox Err.Description, vbCritical, "Error " & Nz(Err.Number, "")
+    Resume ExitMethod
+End Sub
+
+
+
+Public Sub OpenPropertiesListForm()
+On Error GoTo HandleErrors
+
+    DoCmd.OpenForm "frmDbPropertiesList"
+    DoCmd.Close acForm, "frmStart"
+
+ExitMethod:
+    Exit Sub
+HandleErrors:
+    MsgBox Err.Description, vbCritical, "Error " & Nz(Err.Number, "")
+    Resume ExitMethod
+End Sub
+
+
+
+Public Sub AddPropertyGUI()
+On Error GoTo HandleErrors
+
+    DoCmd.OpenForm "frmDbPropertiesDetails", , , , acFormAdd
+    DoCmd.Close acForm, "frmStart"
+
+ExitMethod:
+    Exit Sub
+HandleErrors:
+    MsgBox Err.Description, vbCritical, "Error " & Nz(Err.Number, "")
+    Resume ExitMethod
+End Sub
