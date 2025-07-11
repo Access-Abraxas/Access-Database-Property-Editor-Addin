@@ -3,9 +3,9 @@ This 100% Free Microsoft Access Add-In tool was designed to help view and edit M
 
 
 ## Where to Download:
-The latest release of the of the Access Add-In file (ACCDA) can be downloaded from here: [Access Add-In Download (.accda file)](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/raw/refs/heads/main/ACCDA/DbPropsAddin.accda)
+The version of the Access Add-In file (.accda) can be downloaded from here: [Lasest ACCDA Download](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/raw/refs/heads/main/ACCDA/DbPropsAddin.accda)
 
-Or download the latest Stable Release here: [Latest Full Release Package](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/releases)
+Or download the latest Stable Release package here: [Latest Full Release Package](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/releases)
 
 
 ## How to Install:
@@ -30,11 +30,11 @@ To use this tool once it has been installed:
 
 
 ## Project Contributors:
-The following is a list of the contributors to this project:
+A **GREAT BIG THANKS** to the following contributors to this project:
 
 1. [George Hepworth](https://www.gpcdata.com) - For hosting the Access Pacific Users Group and inspiring this tool.
 2. [Crystal Long](https://www.msaccessgurus.com/) - For her contributions to the Access Pacific Users Group and the information she documented for creating Access Add-Ins.
-3. [The Access Pacific Users Group](https://accessusergroups.org/pacific/) - For their community help and support of Access and their contributions for testing this tools.
+3. [The Access Pacific Users Group](https://accessusergroups.org/pacific/) - For their community help and support of Access and their contributions for testing this tool.
 4. [Geoffrey Griffith](https://geoffreygriffith.com) - For my work to create this tool.
 
 
