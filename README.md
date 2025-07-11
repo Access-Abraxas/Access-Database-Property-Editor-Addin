@@ -1,9 +1,11 @@
 # The Microsoft Access Database Property Editor Add-In
-This 100% Free Microsoft Access Add-In tool was designed to help view and edit MS Access database level properties for any database you have open in MS Access.  The database level properties are the DAO properties found in the `Application.CurrentDB.Properties` collection.  These properties are generally the database level settings used within the Microsoft Access client for your specific Access database application.  Changing these properties manually CAN BE DANGEROUS and difficult to do, and this tool is an attempt to make it safer to edit these properties, as well as make it super simple to quickly view all the database properties for any given Access database application.
+This 100% Free Microsoft Access Add-In tool was designed to help view and edit MS Access database level properties for any database you have open in MS Access.  The database level properties are the DAO properties found in the `Application.CurrentDB.Properties` collection.  These properties are generally the database level settings used within the Microsoft Access client for your specific Access database application.  Changing these properties manually **CAN BE DANGEROUS** and difficult to do, and this tool is an attempt to make it safer to edit these properties, as well as make it super simple to quickly view all the database properties for any given Access database application.
 
 
-## Where to download:
-The latest release of the of the Access Add-In file (ACCDA) can be downloaded from here: \[Latest ACCDA Release](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/releases)
+## Where to Download:
+The latest release of the of the Access Add-In file (ACCDA) can be downloaded from here: [Access Add-In Download (.accda file)](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/ACCDA/DbPropsAddin.accda)
+
+Or download the latest Stable Release here: [Latest Full Release Package](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/releases)
 
 
 ## How to Install:
@@ -30,10 +32,10 @@ To use this tool once it has been installed:
 ## Project Contributors:
 The following is a list of the contributors to this project:
 
-1. George Hepworth
-2. Crystal Long
-3. The Access Pacific Users Group
-4. Geoffrey Griffith
+1. [George Hepworth](https://www.gpcdata.com) - For hosting the Access Pacific Users Group and inspiring this tool.
+2. [Crystal Long](https://www.msaccessgurus.com/) - For her contributions to the Access Pacific Users Group and the information she documented for creating Access Add-Ins.
+3. [The Access Pacific Users Group](https://accessusergroups.org/pacific/) - For their community help and support of Access and their contributions for testing this tools.
+4. [Geoffrey Griffith](https://geoffreygriffith.com) - For my work to create this tool.
 
 
 
