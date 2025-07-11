@@ -26,7 +26,7 @@ To use this tool once it has been installed:
 
 1. Open any Access database in Microsoft Access.
 2. On the "Database Tools" ribbon, click the "Add-Ins" option drop down, and choose the "Db Property Editor" option.  The Database Property Editor "Start" form will open.
-3. Click on the "View Database Properties" button on the Start form.  A form should a list of all the database level properties for the current database will open.
+3. Click on the "View Database Properties" button on the "Start" form.  A form showing a list of all the database level properties for the current database will opened.
 
 
 ## Project Contributors:
