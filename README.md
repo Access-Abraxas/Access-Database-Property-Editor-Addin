@@ -3,7 +3,7 @@ This 100% Free Microsoft Access Add-In tool was designed to help view and edit M
 
 
 ## Where to Download:
-The version of the Access Add-In file (.accda) can be downloaded from here: [Lasest ACCDA Download](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/raw/refs/heads/main/ACCDA/DbPropsAddin.accda)
+Download the FREE Microsoft Access Database Property Editor Add-In (.accda file) here: [Latest ACCDA Download](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/raw/refs/heads/main/ACCDA/DbPropsAddin.accda)
 
 Or download the latest Stable Release package here: [Latest Full Release Package](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/releases)
 
