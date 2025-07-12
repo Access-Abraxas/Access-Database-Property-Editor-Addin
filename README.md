@@ -11,7 +11,7 @@ Or download the latest Stable Release package here: [Latest Full Release Package
 ## How to Install:
 To just install the latest version of this Access Add-In without messing with any of the source code, complete the following steps:
 
-1. Download the latest ACCDA file.
+1. Download the latest ACCDA file [from HERE](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/raw/refs/heads/main/ACCDA/DbPropsAddin.accda).
 2. Open any database in Microsoft Access and go to the "Database Tools" ribbon menu. 
 3. On the "Database Tools" ribbon, click the "Add-Ins" option drop down, and choose the "Add-In Manager" option.  This will open the Access "Add-In Manager" form.
 4. On the "Add-In Manager" form, click the "Add New..." option.  The will open the Access "Open" file dialog. 
