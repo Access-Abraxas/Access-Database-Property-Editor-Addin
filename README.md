@@ -14,7 +14,7 @@ To just install the latest version of this Access Add-In without messing with an
 1. Download the latest ACCDA file [from HERE](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/raw/refs/heads/main/ACCDA/DbPropsAddin.accda).
 2. Open any database in Microsoft Access and go to the "Database Tools" ribbon menu. 
 3. On the "Database Tools" ribbon, click the "Add-Ins" option drop down, and choose the "Add-In Manager" option.  This will open the Access "Add-In Manager" form.
-4. On the "Add-In Manager" form, click the "Add New..." option.  The will open the Access "Open" file dialog. 
+4. On the "Add-In Manager" form, click the "Add New..." option.  The Access "Open" file dialog will be opened. 
 5. On the "Open" file dialog, navigate to the ACCDA file you downloaded and click the "Open" button.  
 
 You will be taken back to the "Add-In Manager" form and the Add-In should now show as installed.
@@ -34,7 +34,7 @@ A **GREAT BIG THANKS** to the following contributors to this project:
 
 1. [George Hepworth](https://www.gpcdata.com) - For hosting the Access Pacific Users Group and inspiring this tool.
 2. [Crystal Long](https://www.msaccessgurus.com/) - For her contributions to the Access Pacific Users Group and the information she documented for creating Access Add-Ins.
-3. [The Access Pacific Users Group](https://accessusergroups.org/pacific/) - For their community help and support of Access and their contributions for testing this tool.
+3. [The Access Pacific Users Group](https://accessusergroups.org/pacific/) - For their community help and support of Access and their contributions to testing this tool.
 4. [Geoffrey Griffith](https://geoffreygriffith.com) - For my work to create this tool.
 
 
