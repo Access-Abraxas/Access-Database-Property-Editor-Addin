@@ -9,7 +9,7 @@ Or download the latest Stable Release package here: [Latest Full Release Package
 
 
 ## How to Install:
-To just install the latest version of this Access Add-In without messing with any of the course code, complete the following steps:
+To just install the latest version of this Access Add-In without messing with any of the source code, complete the following steps:
 
 1. Download the latest ACCDA file.
 2. Open any database in Microsoft Access and go to the "Database Tools" ribbon menu. 
