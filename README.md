@@ -33,9 +33,10 @@ To use this tool once it has been installed:
 A **GREAT BIG THANKS** to the following contributors to this project:
 
 1. [George Hepworth](https://www.gpcdata.com) - For hosting the Access Pacific Users Group and inspiring this tool.
-2. [Crystal Long](https://www.msaccessgurus.com/) - For her contributions to the Access Pacific Users Group and the information she documented about creating Microsoft Access Add-Ins.
-3. [The Access Pacific Users Group](https://accessusergroups.org/pacific/) - For their community help and support of Access and their contributions to testing this tool.
-4. [Geoffrey Griffith](https://geoffreygriffith.com) - For his work to create this 100% Free Database Property Editor tool for Microsoft Access.
+
+2. [The Access Pacific Users Group](https://accessusergroups.org/pacific/) - For their community help and support of Access and their contributions to testing this tool.
+
+3. [Geoffrey Griffith](https://geoffreygriffith.com) - For his work to create this 100% Free Database Property Editor tool for Microsoft Access.
 
 
 
