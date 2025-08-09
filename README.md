@@ -29,6 +29,16 @@ To use this tool once it has been installed:
 3. Click on the "View Database Properties" button on the "Start" form.  A form showing a list of all the database level properties for the current database will opened.
 
 
+## Screenshots of the MS Access Database Property Editor Tool:
+Screenshots of the primary forms used within this tool:
+
+1. ![Screenshot of the Access Database Property Editor 'Start' form]()
+
+2. ![Screenshot of the Access Database Property Editor 'Property List' form]()
+
+3. ![Screenshot of the Access Database Property Editor 'Property Details' form]()
+
+
 ## Project Contributors:
 A **GREAT BIG THANKS** to the following contributors to this project:
 
@@ -39,6 +49,12 @@ A **GREAT BIG THANKS** to the following contributors to this project:
 3. [Geoffrey Griffith](https://geoffreygriffith.com) - For his work to create this 100% Free Database Property Editor tool for Microsoft Access.
 
 
+## Other Free Microsoft Access Tools:
+Some other projects I've created in MS Access that I've also made available 100% FREE:
+
+1. [Access Add-In Helper](https://github.com/Access-Abraxas/Access-Add-In-Helper)
+2. [Removed VBA Line Numbers Add-In](https://github.com/Access-Abraxas/Remove-VBA-Line-Numbers-Addin)
+3. [Win32 API Declarations for VBA](https://github.com/Access-Abraxas/Win32-API-Declarations-for-VBA) 
 
 
 
