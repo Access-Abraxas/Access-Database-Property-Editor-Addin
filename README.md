@@ -32,11 +32,11 @@ To use this tool once it has been installed:
 ## Screenshots of the MS Access Database Property Editor Tool:
 Screenshots of the primary forms used within this tool:
 
-1. ![Screenshot of the Access Database Property Editor 'Start' form]()
+1. ![Screenshot of the Access Database Property Editor 'Start' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Start_form.jpg)
 
-2. ![Screenshot of the Access Database Property Editor 'Property List' form]()
+2. ![Screenshot of the Access Database Property Editor 'Property List' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Property_list_form.jpg)
 
-3. ![Screenshot of the Access Database Property Editor 'Property Details' form]()
+3. ![Screenshot of the Access Database Property Editor 'Property Details' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Property_details_form.jpg)
 
 
 ## Project Contributors:
