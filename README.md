@@ -21,7 +21,6 @@ You will be taken back to the "Add-In Manager" form and the Add-In should now sh
 
 
 ## How to Use this Tool:
-
 To use this tool once it has been installed:
 
 1. Open any Access database in Microsoft Access.
@@ -59,7 +58,9 @@ A **GREAT BIG THANKS** to the following contributors to this project:
 Some other projects I've created in MS Access that I've also made available 100% FREE:
 
 1. [Access Add-In Helper](https://github.com/Access-Abraxas/Access-Add-In-Helper)
-2. [Removed VBA Line Numbers Add-In](https://github.com/Access-Abraxas/Remove-VBA-Line-Numbers-Addin)
+
+2. [Remove VBA Line Numbers Add-In](https://github.com/Access-Abraxas/Remove-VBA-Line-Numbers-Addin)
+
 3. [Win32 API Declarations for VBA](https://github.com/Access-Abraxas/Win32-API-Declarations-for-VBA) 
 
 
