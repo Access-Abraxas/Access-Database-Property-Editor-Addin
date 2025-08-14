@@ -47,11 +47,11 @@ The following are some screenshots of the primary forms used within the MS Acces
 ## Project Contributors:
 A **GREAT BIG THANKS** to the following contributors to this project:
 
-1. [George Hepworth](https://www.imaginethough.com/) - For hosting the Access Pacific Users Group and inspiring this tool.
+1. [George Hepworth](https://imaginethough.com/) - For hosting the Access Pacific Users Group and inspiring this tool.
 
-2. [The Access Pacific Users Group](https://www.imaginethough.com/) - For their community help and support of Access and their contributions to testing this tool.
+2. [The Access Pacific Users Group](https://imaginethough.com/) - For their community help and support of Access and their contributions to testing this tool.
 
-3. [Geoffrey Griffith](https://www.imaginethough.com/) - For his work to create this 100% Free Database Property Editor tool for Microsoft Access.
+3. [Geoffrey Griffith](https://imaginethough.com/) - For his work to create this 100% Free Database Property Editor tool for Microsoft Access.
 
 
 ## Other Free Microsoft Access Tools:
