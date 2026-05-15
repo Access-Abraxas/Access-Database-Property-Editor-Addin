@@ -44,7 +44,7 @@ To use this tool once it has been installed:
 1. Open any Access database in Microsoft Access.
 2. On the "Database Tools" ribbon, click the "Add-Ins" option drop down, and choose the "Db Property Editor" option.  
 
-![Screenshot of the Access Database Property Editor Add-In menu option](https://github.com/Access-Abraxas/Microsoft_Access_Add-Ins_Db_Property_Editor_menu.jpg)
+![Screenshot of the Access Database Property Editor Add-In menu option](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Microsoft_Access_Add-Ins_Db_Property_Editor_menu.jpg)
 
 3. The Database Property Editor "Start" form will open, click on the "View Database Properties" button on the "Start" form.  
 
