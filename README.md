@@ -47,7 +47,7 @@ The following are some screenshots of the primary forms used within the MS Acces
 ## Project Contributors:
 A **GREAT BIG THANKS** to the following contributors to this project:
 
-1. [George Hepworth](https://imaginethought.com/) - For hosting the Access Pacific Users Group and inspiring this tool.
+1. [George Hepworth](https://www.gpcdata.com/) - For hosting the Access Pacific Users Group and inspiring this tool.
 
 2. [The Access Pacific Users Group](https://imaginethought.com/) - For their community help and support of Access and their contributions to testing this tool.
 
