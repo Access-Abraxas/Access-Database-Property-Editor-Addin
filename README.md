@@ -12,10 +12,28 @@ Or download the latest Stable Release package here: [Latest Full Release Package
 To just install the latest version of this Access Add-In without messing with any of the source code, complete the following steps:
 
 1. Download the latest ACCDA file [from HERE](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/raw/refs/heads/main/ACCDA/DbPropsAddin.accda).
-2. Open any database in Microsoft Access and go to the "Database Tools" ribbon menu. 
+2. Open any database in Microsoft Access and go to the "Database Tools" ribbon menu.
+
+![Screenshot of the Microsoft Access Database Tools Ribbon Menu](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Microsoft_Access_Database_Tools_Ribbon_menu.jpg)
+ 
 3. On the "Database Tools" ribbon, click the "Add-Ins" option drop down, and choose the "Add-In Manager" option.  This will open the Access "Add-In Manager" form.
-4. On the "Add-In Manager" form, click the "Add New..." option.  The Access "Open" file dialog will be opened. 
-5. On the "Open" file dialog, navigate to the ACCDA file you downloaded and click the "Open" button.  
+
+![Microsoft Access Add-Ins Manager Menu](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Microsoft_Access_Add-Ins_menu.jpg)
+
+4. The Access "Add-In Manager" form will be opened, click the "Add New..." button. 
+
+![Microsoft Access Add-In Manager Add New Button](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Microsoft_Access_Add-In_Manager_form.jpg)
+
+5. The Access "Open" file dialog will be opened. 
+6. On the "Open" file dialog, navigate to the ACCDA file you downloaded and click the "Open" button.  
+
+![Open ACCDA Add-In File in Microsoft Access](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Microsoft_Access_Open_SqliteConnector_accda_file.jpg)
+
+7. The Add-In will be installed and will now show in the "Add-In Manager" form.
+
+![Microsoft Access Add-In Manager with new Add-In](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Microsoft_Access_Add-In_Manager_with_New_Add-In.jpg)
+
+The Microsoft Access Database Property Editor Add-In should now be installed correctly.
 
 You will be taken back to the "Add-In Manager" form and the Add-In should now show as installed.
 
