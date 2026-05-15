@@ -50,7 +50,7 @@ To use this tool once it has been installed:
 
 ![Screenshot of the Access Database Property Editor 'Start' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Start_form.jpg)
 
-4. A form showing a list of all the database level properties for the current database will opened.
+4. A form showing a list of all the database level properties for the current database will open.
 
 ![Screenshot of the Access Database Property Editor 'Property List' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Property_list_form.jpg)
 
