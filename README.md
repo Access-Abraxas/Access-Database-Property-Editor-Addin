@@ -46,7 +46,7 @@ To use this tool once it has been installed:
 
 ![Screenshot of the Access Database Property Editor Add-In menu option](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Microsoft_Access_Add-Ins_Db_Property_Editor_menu.jpg)
 
-3. The Database Property Editor "Start" form will open, click on the "View Database Properties" button on the "Start" form.  
+3. The Database Property Editor "Start" form will open, click on the "Database Properties List" button on the "Start" form.  
 
 ![Screenshot of the Access Database Property Editor 'Start' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Start_form.jpg)
 
