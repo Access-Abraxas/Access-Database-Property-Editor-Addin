@@ -59,9 +59,11 @@ Some other projects I've created in MS Access that I've also made available 100%
 
 1. [Access Add-In Helper](https://github.com/Access-Abraxas/Access-Add-In-Helper)
 
-2. [Remove VBA Line Numbers Add-In](https://github.com/Access-Abraxas/Remove-VBA-Line-Numbers-Addin)
+2. [Access Link-to-SQLite Tables Add-In](https://github.com/Access-Abraxas/Access-Link-To-SQLite-GUI-Add-In)
 
-3. [Win32 API Declarations for VBA](https://github.com/Access-Abraxas/Win32-API-Declarations-for-VBA) 
+3. [Remove VBA Line Numbers Add-In](https://github.com/Access-Abraxas/Remove-VBA-Line-Numbers-Addin)
+
+4. [Win32 API Declarations for VBA](https://github.com/Access-Abraxas/Win32-API-Declarations-for-VBA) 
 
 
 
