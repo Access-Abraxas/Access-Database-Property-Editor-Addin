@@ -42,8 +42,21 @@ You will be taken back to the "Add-In Manager" form and the Add-In should now sh
 To use this tool once it has been installed:
 
 1. Open any Access database in Microsoft Access.
-2. On the "Database Tools" ribbon, click the "Add-Ins" option drop down, and choose the "Db Property Editor" option.  The Database Property Editor "Start" form will open.
-3. Click on the "View Database Properties" button on the "Start" form.  A form showing a list of all the database level properties for the current database will opened.
+2. On the "Database Tools" ribbon, click the "Add-Ins" option drop down, and choose the "Db Property Editor" option.  
+
+![Screenshot of the Access Database Property Editor Add-In menu option](https://github.com/Access-Abraxas/Microsoft_Access_Add-Ins_Db_Property_Editor_menu.jpg)
+
+3. The Database Property Editor "Start" form will open, click on the "View Database Properties" button on the "Start" form.  
+
+![Screenshot of the Access Database Property Editor 'Start' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Start_form.jpg)
+
+4. A form showing a list of all the database level properties for the current database will opened.
+
+![Screenshot of the Access Database Property Editor 'Property List' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Property_list_form.jpg)
+
+5. Double-click on any property in the list to open the 'Property Details' form to view or edit that property.
+
+![Screenshot of the Access Database Property Editor 'Property Details' form](https://github.com/Access-Abraxas/Access-Database-Property-Editor-Addin/blob/main/Screenshots/Access_Database_Property_Editor_Property_details_form.jpg)
 
 
 ## Screenshots of the MS Access Database Property Editor Tool:
@@ -67,9 +80,9 @@ A **GREAT BIG THANKS** to the following contributors to this project:
 
 1. [George Hepworth](https://www.gpcdata.com/) - For hosting the Access Pacific Users Group and inspiring this tool.
 
-2. [The Access Pacific Users Group](https://imaginethought.com/) - For their community help and support of Access and their contributions to testing this tool.
+2. [The Access Pacific Users Group](https://imaginethought.com/site/) - For their community help and support of Access and their contributions to testing this tool.
 
-3. [Geoffrey Griffith](https://imaginethought.com/) - For his work to create this 100% Free Database Property Editor tool for Microsoft Access.
+3. [Geoffrey Griffith](https://imaginethought.com/site/) - For his work to create this 100% Free Database Property Editor tool for Microsoft Access.
 
 
 ## Other Free Microsoft Access Tools:
